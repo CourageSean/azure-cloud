@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: courageseanazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: courageseanazurecloud
+  template:
+    metadata:
+      labels:
+        app: courageseanazurecloud 
+    spec:
+      containers:
+        - name: courageseanazurecloud 
+          image: seanazurepetstorecr.azurecr.io/courageseanazurecloud
+          ports:
+          - containerPort: 80
