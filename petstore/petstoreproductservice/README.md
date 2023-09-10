@@ -31,7 +31,7 @@ Enable Application Inisghts (empty and disabled by default, you'll want to uncom
 
 Test endpoints:
 
-GET Request for service info (No headers needed)
+GET Request for service info (No headers needed).
 
 ```http://localhost:8082/petstoreprpductservice/v2/product/info```
 
